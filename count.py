@@ -6,7 +6,7 @@ extensions = ['.go']
 ignore_file = './src-ig'
 src_file = './src'
 readmeFileName = "./Readme.md"
-machineName = 'mc.house.txt'
+machineName = 'ln.house.txt'
 
 fReadme = open(readmeFileName, "w")
 def countLines(path):
