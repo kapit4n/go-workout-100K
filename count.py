@@ -25,6 +25,9 @@ def countLines(path):
 total = 0
 fReadme.write("## Categories")
 
+fMachine = open(machineName, "w")
+fMachine.write(str(total))
+
 for x_file in [ignore_file, src_file]:
     total = total + countLines(x_file)
     for f in os.listdir(x_file):
@@ -43,8 +46,6 @@ for cfile in os.listdir("."):
             fReadme.write("\n# Other Total \n" + str(otherTotal))
             total = total + otherTotal
 
-fMachine = open(machineName, "w")
-fMachine.write(str(total))
 
 fReadme.write("\n# Total \n" + str(total))
 print(total)
