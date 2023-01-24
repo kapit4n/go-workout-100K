@@ -6,7 +6,7 @@ extensions = ['.go']
 ignore_file = './src-ig'
 src_file = './src'
 readmeFileName = "./Readme.md"
-machineName = 'ln.house.txt'
+machineName = 'mc.house.txt'
 
 fReadme = open(readmeFileName, "w")
 def countLines(path):
@@ -25,10 +25,19 @@ def countLines(path):
 total = 0
 fReadme.write("## Categories")
 
+
+for x_file in [ignore_file, src_file]:
+    total = total + countLines(x_file)
+    for f in os.listdir(x_file):
+        pathFull = x_file + "/" + f
+        fReadme.write("\n## " + str(f).upper() + "\n")
+        if (os.path.isdir(pathFull)):
+            total = total + countLines(pathFull)
+
 fMachine = open(machineName, "w")
 fMachine.write(str(total))
 
-for x_file in [ignore_file, src_file]:
+for x_file in [src_file]:
     total = total + countLines(x_file)
     for f in os.listdir(x_file):
         pathFull = x_file + "/" + f
