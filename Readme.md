@@ -2,8 +2,8 @@
 S(0)
 
 ## MICROSERVICES
-go-kit-01-24-2023.go(247), 
-S(247)
+broker-01-25-2023.go(105), go-kit-01-24-2023.go(247), 
+S(352)
 
 ## ALGORITHMS
 binary-search-01-01-2023.go(53), parallelism-01-03-2023.go(220), 
@@ -26,8 +26,8 @@ impl-01-18-2023.go(163), client-kube-01-18-2023.go(80),
 S(243)
 
 ## FRAMEWORKS
-gin-01-01-2023.go(0), gorm-01-01-2023.go(104), redis-01-02-2023.go(84), gin-02-02-2023.go(51), 
-S(239)
+gin-01-01-2023.go(0), gorm-01-01-2023.go(104), redis-01-02-2023.go(84), redis-01-25-2023.go(192), gin-02-02-2023.go(51), 
+S(431)
 
 ## BEST-PRACTICES
 one-01-06-2023.go(67), two-01-06-2023.go(78), 
@@ -48,4 +48,4 @@ S(0)
 # Other Total 
 218
 # Total 
-2517
+2814
